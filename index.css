@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+    background-color:#060b0f;
+}
+
+#main{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#card {
+    height: 30vw;
+    width: 25vw;
+    background-color: #060b0f;
+    /* border-radius: 10px; */
+    border: 1px solid;
+    border-color: #574eae;
+    position: absolute;
+    z-index: 99;
+    
+}
+
+#card #text{
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: calc(100% - 45%);
+}
+#card img{
+    height: 45%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    /* border-radius: inherit; */
+}
+#card h2{
+    color: #dac189;
+    font-weight: lighter;
+    position: relative;
+    left: 20px;
+    margin-bottom: 10px;
+
+}
+#card h1{
+    color: #ffffff;
+    position: relative;
+    left: 20px;
+    margin-bottom: 5px;
+}
+#card h5{
+    color: #ffffff;
+    font-weight: lighter;
+    position: relative;
+    left: 20px;
+    margin-bottom: 10px;
+}
+#card button{
+    margin-left: 110px;
+    margin-top: 30px;
+    border: 2px solid #ffda4d;
+    padding: 10px 15px;
+    border-radius: 20px;
+    color: #171719;
+    font-weight: bolder;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+#card button:active{
+    transform: scale(0.96);
+}
+
+#bg{
+    background-image: url(./SDXL_09_black_background_with_blue_glowing_small_circles_2.jpg);
+    /* border-radius: 10px; */
+    height: 30vw;
+    width: 25vw;
+    right: 15px;
+    bottom: 15px;
+    position: relative;
+    z-index: 1;
+    border: 1px solid;
+    border-color: #574eae;
+}
